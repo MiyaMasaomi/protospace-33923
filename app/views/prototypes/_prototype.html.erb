@@ -7,7 +7,7 @@
       <%= prototype.catch_copy %>
     </p>
     <%#= link_to "by プロトタイプの投稿者名", root_path, class: :card__user %>
-    <%= link_to prototype.concept, user_path(prototype.user.id), class: :card__user %>
+    <%= link_to "by #{prototype.user.name}", user_path(prototype.user.id), class: :card__user %>
     <%#上記全てにprototype_path(prototype.id)をつけているが最後のプロトタイプの投稿者だけuse_pathにしたい%>
   </div>
 </div>
